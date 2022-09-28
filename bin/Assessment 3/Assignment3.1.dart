@@ -5,11 +5,12 @@ number to it’s previous sum. Finally print the sum. Correct sum is 55.
 Program written by: Arnfríður Ingvarsdóttir
 */
 
-import 'dart:convert';
-import 'dart:io';
-
 void main() {
-  for (int i = 0; i < 11; i++) {
-    print(i + i);
+  int temp = 0;
+
+  for (int i = 1; i <= 10; i++) {
+    print(i);
+    temp = temp + i;
   }
+  print(temp);
 }
