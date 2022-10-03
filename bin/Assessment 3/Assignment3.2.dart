@@ -23,5 +23,16 @@ import 'dart:convert';
 import 'dart:io';
 
 void main() {
+  int number;
 
+  print('Please enter a number: ');
+  String inPutNumber = stdin.readLineSync(encoding: utf8);
+  number = int.tryParse(inPutNumber);
+
+  print('Multiplication table from 1 to 10 of the number you entered.');
+
+  for (int i = 1; i <= 10; i++) {
+    int total = number * i;
+    print('$number*$i = $total');
+  }
 }
