@@ -19,8 +19,15 @@ import 'dart:io';
 
 void main() {
   int number;
+  int digit = 0;
 
   print('Please enter a number: ');
   String inPutNumber = stdin.readLineSync(encoding: utf8);
   number = int.tryParse(inPutNumber);
+
+  while (number > 0) {
+    digit += 1;
+    number = number ~/ 10;
+  }
+  print('Your number contains $digit digits');
 }
