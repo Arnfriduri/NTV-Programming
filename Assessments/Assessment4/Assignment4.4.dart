@@ -25,7 +25,8 @@ void main() {
       strings.add(stringEntered);
     }
   }
-  print(strings);
+
+  //reversing the order of the string
   var reversed = strings.reversed;
   print(reversed.toList());
 }
