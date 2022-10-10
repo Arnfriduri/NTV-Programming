@@ -9,4 +9,8 @@ Program written by: Arnfríður Ingvarsdóttir
 import 'dart:convert';
 import 'dart:io';
 
-void main() {}
+void main() {
+
+  print('');
+  print('Please enter a number: ');
+}
